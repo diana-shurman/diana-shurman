@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Calculator of chocolates</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1> How many chocolates Evgeny has to buy for Diana? <image src="images/chocolate.png"> </image></h1>
+            <div class="mainForm">
+                <p>How much Diana is angry? <image src="images/angry-cat.png"></p>
+                    <select id="angryDiana" placeholder="Your amount" style="color:#777;" > 
+                    <option selected disabled hidden value="0"> Select option from 1 to 10 </option>
+                    <option value="1"> 1 - Ready forgive you for the coffee.  </option>
+                    <option value="2"> 2 - Ready forgive you for the coffee and chocolate. </option> 
+                    <option value="3"> 3 - Seems like coffee and chocolate don't work. </option>
+                    <option value="4"> 4 - Ready forgive you for the washing dishes. </option>
+                    <option value="5"> 5 - Ready forgive you for the bite. </option>
+                    <option value="6"> 6 - Don't speak with you and ready forgive you for the bite. </option>
+                    <option value="7"> 7 - Don't speak with you and ready forgive you for the bites. </option>
+                    <option value="8"> 8 - Don't speak with you and there is no way for forgivness. </option>
+                    <option value="9"> 9 - Very angry and ready to bite! </option>
+                    <option value="10"> 10 - Very angry and ready to bite and kill! </option>
+                    </select>
+                    <div class="seperator"></div>
+                <p>How much Evgeny is to blame? <image src="images/sad-face.png" > </p>
+                    <select id="blamedEvgeny" style="color:#777;"> 
+                    <option selected disabled hidden  value="0"> Select option from 1 to 5 </option>
+                    <option value="1"> 1 - Small sin.  </option>
+                    <option value="2"> 2 - More than small, but less then medium sin. </option> 
+                    <option value="3"> 3 - Medium sin. </option>
+                    <option value="4"> 4 - Big sin. </option>
+                    <option value="5"> 5 - Large sin. </option>
+                    </select>
+                    <div class="seperator"></div>
+                <p>Which amount of chocolates is enough in your opinion? <image src="images/smiling-face.png"></p>
+                <input id="enoughChocolates" type="text" placeholder="Your amount"> 
+                <button class="calculate" onclick="calculate(), show()" id="calculate"> Calculate </button>
+                <div class="resultChocolates" id="resultChocolates" style="display:none"> 
+                    <div class="seperator"> </div> Chocolates you need to buy: <image src="images/chocolate.png"> <div id="amountChocolates"></div> <br> 
+                    Average amount of money you need to spend on them: <image src="images/money.png"> <div id="amountMoney"> UAH</div> </div>
+            </div>
+    </div>
+
+<script src="script.js" type="text/javascript"> </script>
+</body>
+</html>
